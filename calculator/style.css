@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* background-image: url(img/texture-1376.gif); */
+   /* background-color: #b8b087; */
+   background-color: #fff;
+   border-radius:20px;
+   box-shadow: 25px 25px 75px rgba(0, 0,0, 0.25),10px 10px 70px rgba(0, 0,0, 0.25),inset -5px -5px -15px rgba(0, 0,0, 0.25),inset 5px 5px 15px rgba(0, 0,0, 0.5);
+   
+}
+.calculator{
+    width: 455px;
+    height:700px;
+    padding: 20px;
+    /*border: 2px solid #222;
+    */border-radius: 20px;
+    background:linear-gradient(#555353,#363535,#303030);
+    /* box-shadow: 25px 25px 75px rgba(0, 0,0, 0.25),10px 10px 70px rgba(0, 0,0, 0.25),inset -5px -5px -15px rgba(0, 0,0, 0.25),inset 5px 5px 15px rgba(0, 0,0, 0.5); */
+    box-shadow:inset 0 5px 1px rgba(0, 0,0, 0.55),0 5px 5px rgba(0, 0,0, 0.25),0 15px 25px rgba(0, 0,0, 0.75);
+  
+}   
+button{
+    width:80px;
+    height: 80px;
+    border: none;
+    color: white;
+    margin: 10px;
+    border-radius: 6px;
+    background:linear-gradient(#555353,#363535,#303030);
+    box-shadow:inset 0 5px 1px rgba(0, 0,0, 0.35),0 5px 5px rgba(0, 0,0, 0.5),0 15px 25px rgba(0, 0,0, 0.35);
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.calculator button::before{
+    background: linear-gradient(90deg,#2d2d2d,#4d4d4d);
+    border-radius: 10px;
+    border-left: 1px solid#0004;
+    border-bottom:1px solid#0004 ;
+    border-top: 1px solid#0004;
+    box-shadow: -5px -5px 15px rgba(0, 0,0, 0.1), 10px 5px 10px rgba(0, 0,0, 0.15);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.calculator button:active{
+    filter: brightness(1.5);
+    -webkit-filter: brightness(1.5);
+}
+button:checked{
+    box-shadow:inset 0 5px 1px rgba(0, 0,0, 0.35),inset 0 5px 5px rgba(0, 0,0, 0.5),inset 0 15px 25px rgba(0, 0,0, 0.35);
+}
+input{
+    height:150px;
+    width: 410px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: text;
+    text-align: right;
+    font-size: 50px;
+    border-radius: 10px;
+    background: #a7af7c;
+    box-shadow: 0 0 0 2px rgba(0, 0,0, 0.75);
+    color: #000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+input:placeholder{
+    /* height:100px; */
+    color:white;
+
+}
+.eqlBtn{
+   
+    color:#fff;
+    background: linear-gradient(90deg,#ffb200,#ffba00);
+}
+.addBtn{
+    background: linear-gradient(90deg,#ffb200,#ffba00);
+    color:#fff;
+}
+.subBtn{
+    background: linear-gradient(90deg,#ffb200,#ffba00);
+    color:#fff;
+}
+.multiBtn{
+    background: linear-gradient(90deg,#ffb200,#ffba00);
+    color:#fff;
+}
+.divBtn{
+    background: linear-gradient(90deg,#ffb200,#ffba00);
+    color:#fff;
+}
+.presBtn{ color:black;
+    background: linear-gradient(90deg,#ffb200,#ffba00);
+    color:#fff;
+    
+}
+.delBtn{
+    color:#fff;
+    background: linear-gradient(90deg,#e3242b, #d0312d);
+}
+.clrBtn{
+    color:#fff;
+    background: linear-gradient(90deg,#e3242b, #d0312d);
+}
